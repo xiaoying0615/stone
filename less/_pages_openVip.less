@@ -1,0 +1,126 @@
+//open shop
+.openVip-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: @colorBg;
+  padding-bottom: 0.25rem;
+  .vip_info {
+    text-align: center;
+    padding: 0rem 0.35rem 1rem;
+    background: url("../imgs/index_bg.png") no-repeat top center /cover;
+    i,p{
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(@colFrom), to(@colTo));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    i{
+      font-size: 1.35rem;
+      margin: -0.2rem 0;
+    }
+    p{
+      font-size: 0.32rem;
+      text-align: center;
+    }
+  }
+  .vipTopBg{
+    width: 6.9rem;
+    height: 0.55rem;
+    margin: -0.75rem auto 0;
+    background: transparent url("../imgs/vipList_bg.png") top center /contain;
+  }
+  .vipShow{
+    width: 6.9rem;
+    text-align: center;
+    margin: 0 auto;
+    padding:0.2rem 0 0rem;
+    border-radius:0 0 0.1rem 0.1rem;
+    background: #fff;
+    .vipTtl{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      justify-content:space-around;
+      -webkit-justify-content: space-around;
+      padding:0 0.25rem;
+      &>a{
+        display: inline-block;
+        width: 1.7rem;
+        height: 0.58rem;
+        font-size: 0.32rem;
+        color: #333333;
+        line-height: 0.54rem;
+        border:0.02rem solid #ffffff;
+        border-radius: 0.29rem;
+        &.cur{
+          color: #ddae72;
+          border-color: #efbc7c;
+        }
+      }
+    }
+    .vipCtt{
+      padding:0.7rem 0.8rem 0.75rem;
+      &>div{
+        display: none;
+        &#highVip{
+          display: block;
+        }
+        h2,h6{
+          line-height: 1.2;
+        }
+        h2{
+          font-size: 0.56rem;
+          color: #333333;
+        }
+        h6{
+          font-size: 0.28rem;
+          color: #999999;
+          padding-top: 0.1rem;
+        }
+        p{
+          font-size: 0.28rem;
+          color: #666666;
+          &.price{
+            color: #ddae72;
+            line-height: 1.3rem;
+            .num{
+              font-size: 0.56rem;
+            }
+          }
+          .phone{
+            color: #ddae72;
+            border-bottom:0.02rem solid #ddae72;
+          }
+        }
+        ul{
+          border-top:0.01rem solid #e8e8e8;
+          padding:0.45rem 0 0.45rem 0.6rem;
+          text-align: left;
+          line-height: 1.6;
+          font-size: 0.32rem;
+          color: #333333;
+        }
+        .tip{
+          display: inline-block;
+          width: 5.06rem;
+          height: 1.12rem;
+          font-size: 0.36rem;
+          color: #ffffff;
+          line-height: 1rem;
+          border-radius: 0.56rem;
+          margin-bottom: 0.25rem;
+          background: url("../imgs/btn_bg2.png") no-repeat center /cover;
+        }
+        &#freeVip{
+          ul{
+            margin-bottom: 0.55rem;
+            border-bottom:0.01rem solid #e8e8e8;
+          }
+        }
+      }
+    }
+  }
+}

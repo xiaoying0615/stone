@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>分享给朋友</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+    <script src="./js/dom-to-image.min.js"></script>
+    <script src="./js/html2cancas.min.js"></script>
+</head>
+<body>
+<div class="shareFriend-content">
+    <div class="share_info">
+        <img class="tip" src="" alt="" style="display: none"/>
+        <div id="copyCardArea">
+            <div class="logo">
+                <img src="./imgs/temp/shop_logo.png" alt=""/>
+            </div>
+            <h4>湖南长沙熠晶矿石珠宝店</h4>
+            <p>欢迎来到矿石珠宝圈</p>
+            <div class="flex">
+                <p>热度:36802</p>
+                <p>粉丝:2860</p>
+            </div>
+            <img class="code" src="./imgs/temp/code.png" alt=""/>
+            <p><span class="tip">长按二维码->发送给朋友</span></p>
+        </div>
+        <a href="JavaScript:;" class="b-share">
+            <span class="lg">复制链接给朋友</span><br/>
+            <span>链接只能在微信中打开</span>
+        </a>
+    </div>
+</div>
+<script>
+    var card_target = document.getElementById('copyCardArea');
+
+    //andriod
+    domtoimage.toPng(card_target).then(function (dataUrl) {
+        if (dataUrl != "error") {
+            $("#copyCardArea").hide();
+            $(".share_info .tip").attr("src", dataUrl);
+            $(".share_info .tip").show();
+        }
+
+    });
+    //ios
+    if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+        var b64;
+        html2canvas(card_target, {
+            useCORS: true
+        }).then(function (canvas) {
+            try {
+                setTimeout(function () {
+                    b64 = canvas.toDataURL("image/png");
+                    $(".share_info .tip").attr("src", b64);
+                    $(".share_info .tip").show();
+                    $("#copyCardArea").hide();
+                }, 500);
+
+            } catch (err) {
+                console.log(err)
+                // alert(err)
+            }
+        }).catch(function onRejected(error) {
+        });
+
+    }
+
+
+    $(".b-share").click(function () {
+//        待实现
+//        var inputText = document.getElementById('inputText');
+//        inputText.value = window.location.href;
+//        var currentFocus = document.activeElement;
+//        inputText.focus();
+//        inputText.setSelectionRange(0, inputText.value.length);
+//        document.execCommand('copy', true);
+//        currentFocus.focus();
+        $.tips({type:1,content:"复制成功！"});
+    });
+</script>
+</body>
+</html>

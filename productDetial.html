@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/flexslider.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+</head>
+<body>
+<div class="pdtDetial-content">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="./imgs/temp/index_pd2.jpg"/>
+            </li>
+            <li>
+                <img src="./imgs/temp/index_pd1.jpg"/>
+            </li>
+            <li>
+                <img src="./imgs/temp/index_pd2.jpg"/>
+            </li>
+            <li>
+                <img src="./imgs/temp/index_pd1.jpg"/>
+            </li>
+        </ul>
+    </div>
+    <div class="pro-con">
+        <div class="pro-info">
+            <p class="pro-title">上帝的眼泪</p>
+            <p class="pro-price">￥36666</p>
+
+            <!--未点赞-->
+            <a href="javascript:;" class="like j-like">
+                <i class="iconfont icon-1-like"></i> <br>
+                <span>363喜欢</span>
+            </a>
+        </div>
+    </div>
+    <div class="product-detail">
+        <div class="tit">宝贝详情</div>
+        <ul class="clearfix">
+            <li>类别：萤石</li>
+            <li>产地：长沙</li>
+            <li>颜色：蓝色</li>
+            <li>尺寸：20x15x16厘米</li>
+        </ul>
+        <p>详细说明：<br/>
+            矿石是指可从中提取有用组分或其本身具有某种可被利
+            用的性能的矿物集合体。可分为金属矿物、非金属矿物。
+            矿石中有用成分（元素或矿物）的单位含量称为矿石品
+            位，金、铂等贵金属矿石用克/吨表示，其他矿石常用
+            百分数表示。常用矿石品位来衡量矿石的价值，但同样
+            有效成分矿石中脉石（矿石中的无用矿物或有用成分含
+            量甚微而不能利用的矿物）的成分和有害杂质的多少也
+            影响矿石价值。
+        </p>
+    </div>
+    <footer>
+        <a class="item" href="index.html">
+            <i class="iconfont icon-b-home"></i>
+            <span>回到店铺</span>
+        </a>
+        <a class="item j-share" href="javascript:;">
+            <i class="iconfont icon-b-share"></i>
+            <span>分享宝贝</span>
+        </a>
+        <a class="item phone" href="tel:15651012111">
+            <i class="iconfont icon-b-phone"></i>
+            <span>联系店家</span>
+        </a>
+    </footer>
+</div>
+<div class="dialog-share">
+    <img src="./imgs/share.png" alt=""/>
+</div>
+<script>
+    $(function(){
+        $(".j-like").click(function () {
+            if($(this).find("i").hasClass("icon-1-like")){
+                $(this).find("i").removeClass("icon-1-like").addClass("icon-b-like");
+            }else{
+                $(this).find("i").removeClass("icon-b-like").addClass("icon-1-like");
+            }
+        });
+
+        $(".j-share").click(function () {
+            $(".dialog-share").show();
+        });
+
+        $(".dialog-share").click(function () {
+            $(this).hide();
+        });
+        /*轮播*/
+        $('.flexslider').flexslider({
+            border          :   0,
+            animation       :   "slide",             // 动画效果类型，有"fade"：淡入淡出，"slide"：滑动"fade"
+            easing          :   "swing",             // 内容切换时缓动效果，需要jquery easing插件支持"swing"
+            direction       :   "horizontal",          // 内容滚动方向，有"horizontal"：水平方向 和"vertical"：垂直方向"horizontal"
+            animationLoop   :   true,                // 是否循环滚动true
+            startAt         :   0,                   // 初始滑动时的起始位置，定位从第几个开始滑动0
+            slideshow       :   false,                // 是否自动滑动true
+            slideshowSpeed  :   7000,                // 滑动内容展示时间（ms）7000
+            animationSpeed  :   600,                 // 内容切换时间（ms）600
+            initDelay       :   0,                   // 初始化时延时时间0
+            pauseOnHover    :   false,               // 鼠标滑向滚动内容时，是否暂停滚动false
+            touch           :   true,                // 是否支持触摸滑动true
+            directionNav    :   false,                // 是否显示左右方向箭头按钮true
+            keyboard        :   true,                // 是否支持键盘方向键操作true
+            minItems        :   1,                   // 一次最少展示滑动内容的单元个数1
+            maxItems        :   0,                   // 一次最多展示滑动内容的单元个数0
+            move            :   0                    // 一次滑动的单元个数0
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>上传我的宝贝</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+</head>
+<body>
+<div class="uploadProduct-content">
+    <form >
+        <p class="ttl">编辑宝贝资料</p>
+        <div class="infoList">
+            <div class="uploadPic">
+                <p class="info">上传照片<br><span class="num">最多上传4张</span></p>
+                <ul>
+                    <li>
+                        <img src="./imgs/temp/product.png" alt=""/>
+                        <a href="javascript:;" class="j-close iconfont icon-b-close"></a>
+                    </li>
+                    <li class="addPic">
+                        <i class="iconfont icon-b-photo"></i><br/>
+                        <span>添加照片</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="infoList">
+            <div class="setInfo">
+                <div class="set-inline">
+                    <span class="setTTl">设置为镇店之宝</span>
+                    <span class="setTip">最多设置6个宝贝</span>
+                    <span class="switch"><i class="circle"></i></span>
+                </div>
+                <div class="set-inline">
+                    <span class="setTTl">上/下架</span>
+                    <span class="setTip">下架后将不在网页显示</span>
+                    <span class="switch on">上架<i class="circle"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="infoList">
+            <div class="inline">
+                <label for="name">名称</label>
+                <input id="name" type="text" name="name" placeholder="请编辑宝贝的名称"/>
+            </div>
+            <div class="inline">
+                <label for="price">价格</label>
+                <input id="price" type="text" name="price" placeholder="请输入宝贝价格 不填写表示价格面议"/>
+                <span>元</span>
+            </div>
+            <div class="inline">
+                <label for="type">种类</label>
+                <input id="type" type="text" name="type" placeholder="请编辑种类 例如萤石"/>
+            </div>
+            <div class="inline">
+                <label for="addr">产地</label>
+                <input id="addr" type="text" name="addr" placeholder="请编辑产地 例如长沙"/>
+            </div>
+            <div class="inline">
+                <label for="color">颜色</label>
+                <input id="color" type="text" name="color" placeholder="请编辑颜色 例如绿色"/>
+            </div>
+            <div class="inline">
+                <label for="size">尺寸</label>
+                <input id="size" type="text" name="size" placeholder="请编辑尺寸 例如30x20x15厘米"/>
+            </div>
+            <div class="inline">
+                <label for="disc">详细描述</label>
+                <input id="disc" type="text" name="disc" placeholder="添加宝贝的详细描述，方便客人更加了解"/>
+            </div>
+        </div>
+        <a href="javascript:;" class="b-submit">确定</a>
+    </form>
+</div>
+<script>
+    $(function(){
+        $(".b-submit").click(function () {
+//            var name = $('[name = name]').val().trim(),
+//                price = $('[name = price]').val().trim(),
+//                type = $('[name = type]').val().trim(),
+//                addr = $('[name = addr]').val().trim(),
+//                color = $('[name = color]').val().trim(),
+//                size = $('[name = size]').val().trim(),
+//                disc = $('[name = disc]').val().trim();
+//            if (name == '') {
+//                $('[name = name]').attr('placeholder','请输入宝贝名称！');
+//                return false;
+//            }
+//            if (price == '') {
+//                $('[name = price]').attr('placeholder','请输入宝贝价格！');
+//                return false;
+//            }
+//            if (type == '') {
+//                $('[name = type]').attr('placeholder','请编辑种类！');
+//                return false;
+//            }
+//            if (addr == '') {
+//                $('[name = addr]').attr('placeholder','请编辑产地！');
+//                return false;
+//            }
+//            if (color == '') {
+//                $('[name = color]').attr('placeholder','请编辑颜色！');
+//                return false;
+//            }
+//            if (size == '') {
+//                $('[name = size]').attr('placeholder','请编辑尺寸！');
+//                return false;
+//            }
+//            window.location.href = "";
+
+            $.tips({type:1,content:"宝贝修改成功"});
+        });
+        $(".uploadPic .j-close").click(function () {
+            $(this).parent().remove();
+        });
+    });
+</script>
+</body>
+</html>

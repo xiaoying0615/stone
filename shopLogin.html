@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>商家登录</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+</head>
+<body>
+<div class="shopLogin-content">
+    <form >
+        <div class="inline">
+            <label for="mobile">手机号</label>
+            <input id="mobile" type="text" name="mobile" placeholder="请输入手机号"/>
+        </div>
+        <div class="inline">
+            <label for="password">密码</label>
+            <input id="password" type="password" name="password" placeholder="请输入密码"/>
+        </div>
+        <a href="javascript:;" class="b-submit">立即登录</a>
+        <p>
+            <a href="#" class="register">没有账号？申请开店</a>
+            <a href="JavaScript:;" class="forgetPasswd">忘记密码？联系客服</a>
+        </p>
+    </form>
+</div>
+<div class="dialog-addService">
+    <section>
+        <a href="javascript:;" class="j-close"><i class="iconfont icon-l-close"></i></a>
+        <img src="./imgs/temp/code.png" alt=""/>
+        <h4>长按二维码加客服微信</h4>
+        <p>联系客服修改密码</p>
+    </section>
+</div>
+<script>
+    $(function(){
+//        $(".b-submit").click(function () {
+//        var mobile = $('[name = mobile]').val().trim(),
+//            password = $('[name = password]').val().trim();
+//        if (mobile == '') {
+//            $('[name = mobile]').attr('placeholder','请输入手机号！');
+//            return false;
+//        }
+//        if (!/^1[3458][0-9]{9}$/.test(mobile)) {
+//            $('[name = mobile]').val('');
+//            $('[name = mobile]').attr('placeholder','请输入正确的手机号！');
+//            return false;
+//        }
+//        if (password == '') {
+//            $('[name = password]').attr('placeholder','请输入密码！');
+//            return false;
+//        }
+//        window.location.href = "";
+
+            $.tips({type:1,content:"您已成功开店，即将前往登录"});
+        });
+        $(".forgetPasswd").click(function () {
+            $(".dialog-addService").show();
+        });
+        $(".dialog-addService").click(function () {
+            $(".dialog-addService").hide();
+        });
+        $(".dialog-addService section").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".dialog-addService .j-close").click(function () {
+            $(".dialog-addService").hide();
+        });
+    });
+</script>
+</body>
+</html>

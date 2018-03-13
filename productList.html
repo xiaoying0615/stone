@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/flexslider.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<div class="pdtList-content">
+    <div class="product_list">
+        <div class="product_item">
+            <div class="img">
+                <img src="./imgs/temp/index_pd1.jpg" alt=""/>
+                <div class="label">
+                    <i class="iconfont icon-b-label"></i>
+                    <p>镇店之宝</p>
+                </div>
+            </div>
+            <div class="info">
+                <h4>绿色萤石编号001</h4>
+                <p class="price">￥366660.00</p>
+                <p><span>类别：萤石</span><span>产地：长沙</span></p>
+                <p><span>颜色：蓝色</span><span>尺寸：20x15x16厘米</span></p>
+                <p><a href="#" class="edit">编辑</a><a href="javascript:;" class="j-delete">删除</a></p>
+            </div>
+        </div>
+        <div class="product_item">
+            <div class="img">
+                <img src="./imgs/temp/index_pd1.jpg" alt=""/>
+                <div class="label">
+                    <i class="iconfont icon-b-label"></i>
+                    <p>镇店之宝</p>
+                </div>
+            </div>
+            <div class="info">
+                <h4>绿色萤石编号001</h4>
+                <p class="price">￥366660.00</p>
+                <p><span>类别：萤石</span><span>产地：长沙</span></p>
+                <p><span>颜色：蓝色</span><span>尺寸：20x15x16厘米</span></p>
+                <p><a href="#" class="edit">编辑</a><a href="javascript:;" class="j-delete">删除</a></p>
+            </div>
+        </div>
+        <div class="product_item">
+            <div class="img">
+                <img src="./imgs/temp/index_pd1.jpg" alt=""/>
+                <div class="label">
+                    <i class="iconfont icon-b-label"></i>
+                    <p>镇店之宝</p>
+                </div>
+            </div>
+            <div class="info">
+                <h4>绿色萤石编号001</h4>
+                <p class="price">￥366660.00</p>
+                <p><span>类别：萤石</span><span>产地：长沙</span></p>
+                <p><span>颜色：蓝色</span><span>尺寸：20x15x16厘米</span></p>
+                <p><a href="#" class="edit">编辑</a><a href="javascript:;" class="j-delete">删除</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog-delete">
+    <section>
+        <h4>确定要删除吗？</h4>
+        <p>宝贝删除后，将彻底删除该宝贝！</p>
+        <div class="btn">
+            <a href="javascript:;" class="j-cancel">取消</a>
+            <a href="javascript:;" class="j-ensure">确定</a>
+        </div>
+    </section>
+</div>
+<script>
+    $(function(){
+        $(".j-delete").click(function () {
+            $(".dialog-delete").show();
+        });
+        $(".dialog-delete").click(function () {
+            $(".dialog-delete").hide();
+        });
+        $(".dialog-delete section").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".dialog-delete .j-cancel").click(function () {
+            $(".dialog-delete").hide();
+        });
+        $(".dialog-delete .j-ensure").click(function () {
+            $(".dialog-delete").hide();
+        });
+    });
+</script>
+</body>
+</html>

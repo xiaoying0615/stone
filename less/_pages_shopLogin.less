@@ -1,0 +1,61 @@
+//shop login
+.shopLogin-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: @colorBg2;
+  .inline{
+    width:100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    background-color: #fff;
+    &:not(:last-child){
+      height: 0.99rem;
+      border-bottom:0.01rem solid #e8e8e8;
+    }
+    label,input{
+      display: inline-block;
+      font-size: 0.32rem;
+      color: #333333;
+      border-width:0;
+    }
+    label{
+      width: 2.5rem;
+      padding-left: 0.3rem;
+    }
+    input{
+      width: 4.7rem;
+      outline:none;
+    }
+  }
+  .b-submit{
+    display: block;
+    width: 6.9rem;
+    height: 0.9rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.9rem;
+    border-radius: 0.1rem;
+    background-color: #efbc7c;
+    margin:0.6rem auto 0.5rem;
+  }
+  p{
+    font-size: 0.28rem;
+    color: #dcaf70;
+    padding: 0 0.3rem;
+    clear: both;
+    overflow: hidden;
+    line-height: 1.4;
+    a{
+      float: left;
+      display: inline-block;
+      width: auto;
+      color: #dcaf70;
+      border-bottom:0.01rem solid #dcaf70;
+      &.forgetPasswd{
+        float: right;
+      }
+    }
+  }
+}

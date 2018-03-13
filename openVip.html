@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>升级会员</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+</head>
+<body>
+<div class="openVip-content">
+    <div class="vip_info">
+        <i class="iconfont icon-b-crown"></i><br/>
+        <!--<p>选择适合您的会员套餐</p>-->
+        <p>尊敬的高级会员，距离会员到期还剩365天</p>
+    </div>
+    <div class="vipTopBg"></div>
+    <div class="vipShow">
+        <div class="vipTtl">
+            <a href="javascript:;" class="freeVip">免费会员</a>
+            <a href="javascript:;" class="cur highVip">高级会员</a>
+            <a href="javascript:;" class="diamondsVip">砖石会员</a>
+        </div>
+        <div class="vipCtt">
+            <div id="freeVip">
+                <h2>免费会员</h2>
+                <h6>适合中小型工作室</h6>
+                <p class="price">￥<span class="num">0</span>/年</p>
+                <ul>
+                    <li>可展示6个宝贝主页</li>
+                    <li>可设置1个镇店之宝标签</li>
+                    <li>支持分享店铺二维码给朋友</li>
+                </ul>
+                <p>任何疑问咨询客服：<span class="phone">13813003474</span></p>
+            </div>
+            <div id="highVip">
+                <h2>高级会员</h2>
+                <h6>适合中小型工作室</h6>
+                <p class="price">￥<span class="num">888</span>/年</p>
+                <ul>
+                    <li>可展示30个宝贝主页</li>
+                    <li>可设置6个镇店之宝标签</li>
+                    <li>支持分享店铺二维码给朋友</li>
+                </ul>
+                <a href="javascript;;" class="tip">您已是高级会员</a>
+                <p>任何疑问咨询客服：<span class="phone">13813003474</span></p>
+            </div>
+            <div id="diamonsVip">
+                <h2>钻石会员</h2>
+                <h6>适合大型公司</h6>
+                <p class="price">￥<span class="num">1888</span>/年</p>
+                <ul>
+                    <li>展示宝贝主页数量不限</li>
+                    <li>可设置镇店之宝标签数量不限</li>
+                    <li>支持分享店铺二维码给朋友</li>
+                </ul>
+                <a href="javascript:;" class="tip j-openvip">立即申请</a>
+                <p>任何疑问咨询客服：<span class="phone">13813003474</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog-addService">
+    <section>
+        <a href="javascript:;" class="j-close"><i class="iconfont icon-l-close"></i></a>
+        <img src="./imgs/temp/code.png" alt=""/>
+        <h4>长按二维码加客服微信</h4>
+        <p>联系客服手动开通VIP</p>
+    </section>
+</div>
+<script>
+    $(function(){
+        $(".vipTtl a").click(function () {
+            $(".vipTtl a").removeClass("cur");
+            $(this).addClass("cur");
+            $(".vipCtt>div").hide();
+            $(".vipCtt>div").eq($(this).index()).show();
+        });
+        $(".j-openvip").click(function () {
+            $(".dialog-addService").show();
+        });
+        $(".dialog-addService").click(function () {
+            $(".dialog-addService").hide();
+        });
+        $(".dialog-addService section").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".dialog-addService .j-close").click(function () {
+            $(".dialog-addService").hide();
+        });
+    });
+
+</script>
+</body>
+</html>

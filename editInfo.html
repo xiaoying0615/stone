@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>编辑资料</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+</head>
+<body>
+<div class="editInfo-content">
+    <ul class="edit_list">
+        <li class="edit_item">
+            <a href="#" class="j-changeLogo">
+                <div class="info">
+                    <i class="iconfont icon-l-photo"></i>
+                    <p>店铺头像</p>
+                    <img src="./imgs/temp/use_logo.png" alt="" class="logo">
+                    <i class="iconfont icon-l-right"></i>
+                </div>
+            </a>
+        </li>
+        <li class="edit_item">
+            <a href="#">
+                <div class="info">
+                    <i class="iconfont icon-l-ren"></i>
+                    <p>店铺名称</p>
+                    <span>湖南长沙矿物宝石公司</span>
+                    <i class="iconfont icon-l-right"></i>
+                </div>
+            </a>
+        </li>
+        <li class="edit_item">
+            <a href="#">
+                <div class="info">
+                    <i class="iconfont icon-l-phone"></i>
+                    <p>手机号码</p>
+                    <span>138****3381</span>
+                    <i class="iconfont icon-l-right"></i>
+                </div>
+            </a>
+        </li>
+        <li class="edit_item">
+            <a href="#">
+                <div class="info">
+                    <i class="iconfont icon-l-password"></i>
+                    <p>登录密码</p>
+                    <span>修改</span>
+                    <i class="iconfont icon-l-right"></i>
+                </div>
+            </a>
+        </li>
+        <li class="edit_item">
+            <a href="#">
+                <div class="info">
+                    <i class="iconfont icon-l-connect"></i>
+                    <p>联系人姓名</p>
+                    <span>朱有辉</span>
+                    <i class="iconfont icon-l-right"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <a href="javascript:;" class="j-loginOut">退出登录</a>
+</div>
+
+<div class="dialog-changeLogo">
+    <section>
+        <div class="update">
+            <a href="javascript:;" class="takePhoto">拍照</a>
+            <a href="javascript:;" class="choosePic">相册</a>
+        </div>
+        <a href="javascript:;" class="j-cancel">取消</a>
+    </section>
+</div>
+
+<div class="dialog-loginOut">
+    <section>
+        <h4>退出登录</h4>
+        <p>退出登录后，将无法使用部分功能确定退出吗？</p>
+        <div class="btn">
+            <a href="javascript:;" class="j-cancel">取消</a>
+            <a href="javascript:;" class="j-ensure">确定</a>
+        </div>
+    </section>
+</div>
+
+<script>
+    $(function(){
+        $(".j-loginOut").click(function () {
+            $(".dialog-loginOut").show();
+        });
+        $(".dialog-loginOut").click(function () {
+            $(".dialog-loginOut").hide();
+        });
+        $(".dialog-loginOut section").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".dialog-loginOut .j-cancel").click(function () {
+            $(".dialog-loginOut").hide();
+        });
+        $(".dialog-loginOut .j-ensure").click(function () {
+            $(".dialog-loginOut").hide();
+        });
+        $(".j-changeLogo").click(function () {
+            $(".dialog-changeLogo").show();
+        });
+        $(".dialog-changeLogo").click(function () {
+            $(".dialog-changeLogo").hide();
+        });
+        $(".dialog-changeLogo section").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".dialog-changeLogo .j-cancel").click(function () {
+            $(".dialog-changeLogo").hide();
+        });
+    });
+</script>
+</body>
+</html>

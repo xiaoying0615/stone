@@ -1,0 +1,96 @@
+//share to friend
+.shareFriend-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background:@colorBg url("../imgs/index_bg.png") no-repeat top center /contain;
+  padding: 0.35rem 0.3rem;
+  .share_info {
+    text-align: center;
+    padding: 0.3rem 0.75rem 0.6rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    #copyCardArea{
+      padding:0.5rem 0;
+      .logo{
+        width: 1.46rem;
+        height: 1.46rem;
+        text-align: center;
+        margin:auto;
+        img{
+          display: inline-block;
+          width:auto;
+          height:auto;
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 50%;
+        }
+      }
+      h4,p{
+        text-align: center;
+        padding-top: 0.15rem;
+      }
+      h4{
+        font-size: 0.4rem;
+        color: #333333;
+      }
+      p{
+        font-size: 0.24rem;
+        color: #999999;
+        .tip{
+          font-size: 0.28rem;
+          color: #ddae72;
+          border-bottom:0.01rem solid #ddae72;
+        }
+      }
+      .flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        justify-content:center;
+        padding-top: 0.15rem;
+        p{
+          width: 49%;;
+          margin: 0.2rem 0;
+          padding:0 0.2rem;
+          line-height: 1;
+          color: #666666;
+          &:first-child{
+            text-align: right;
+            border-right:1px solid #666666;
+          }
+          &:last-child{
+            text-align: left;
+          }
+        }
+      }
+      .code{
+        display: inline-block;
+        width: 3.58rem;
+        height: 3.58rem;
+        margin: 0.5rem auto 0.3rem;
+      }
+    }
+    .b-share{
+      display: inline-block;
+      width: 5.1rem;
+      height: 1.3rem;
+      text-align: center;
+      border-radius: 0.65rem;
+      padding:0.1rem;
+      overflow: hidden;
+      margin-top: 0.4rem;
+      background: url("../imgs/btn_bg.png") no-repeat top center /cover;
+      span{
+        color: #ffffff;
+        font-size: 0.24rem;
+        &.lg{
+          font-size: 0.36rem;
+        }
+      }
+    }
+  }
+}

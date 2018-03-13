@@ -1,0 +1,67 @@
+//edit info detail
+.editInfoDetail-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: @colorBg2;
+  .infoList{
+    padding-left: 0.3rem;
+    background-color: #fff;
+    .inline{
+      position: relative;
+      width:100%;
+      height: 0.98rem;
+      line-height: 0.98rem;
+      &:not(:last-child){
+        height: 0.99rem;
+        border-bottom:0.01rem solid #e8e8e8;
+      }
+      label,input{
+        display: inline-block;
+        font-size: 0.32rem;
+        color: #333333;
+        border-width:0;
+      }
+      label{
+        width: 1.65rem;
+      }
+      input{
+        font-size: 0.28rem;
+        width: 5.25rem;
+        outline:none;
+        vertical-align: text-bottom;
+        &#price{
+          width: 4.6rem;
+        }
+      }
+      .label{
+        position: absolute;
+        right: 0.3rem;
+        font-size: 0.28rem;
+        color: #999999;
+        text-align: right;
+      }
+    }
+  }
+  .tip{
+    font-size: 0.28rem;
+    color: #999999;
+    padding: 0.3rem;
+    &.num{
+      color: #333333;
+    }
+  }
+  .j-ensure{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #efbc7c;
+  }
+}

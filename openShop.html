@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>我也要开店</title>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/tips-mini.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/media.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/tips-mini.js"></script>
+</head>
+<body>
+<div class="openShop-content">
+    <div class="user_info">
+        <div class="logo">
+            <img src="./imgs/temp/shop_logo.png" alt=""/>
+        </div>
+        <p>Hi~欢迎加入矿物宝石圈！</p>
+    </div>
+    <form >
+        <div class="flex">
+            <p>
+                <span class="num">961</span><br/>
+                <span>已入驻商家</span>
+            </p>
+            <p>
+                <span class="num">39</span><br/>
+                <span>剩余免费名额</span>
+            </p>
+        </div>
+        <h4>填写资料立即开店</h4>
+        <input type="text" name="shopName" placeholder="请输入店名"/>
+        <input type="text" name="userName" placeholder="请输入联系人姓名"/>
+        <input type="text" name="mobile" placeholder="请输入手机号"/>
+        <input type="password" name="password" placeholder="请设置登录密码6-20位数字或字母"/>
+        <a href="JavaScript:;" class="b-submit">
+            <span class="lg">立即提交免费开店</span><br/>
+            <span>还剩39个免费名额</span>
+        </a>
+    </form>
+</div>
+<script>
+    $(".b-submit").click(function () {
+//        var shopName = $('[name = shopName]').val().trim(),
+//            userName = $('[name = userName]').val().trim(),
+//            mobile = $('[name = mobile]').val().trim(),
+//            password = $('[name = password]').val().trim();
+//        if (shopName == '') {
+//            $('[name = shopName]').attr('placeholder','请输入店名！');
+//            return false;
+//        }
+//        if (userName == '') {
+//            $('[name = userName]').attr('placeholder','请输入联系人姓名！');
+//            return false;
+//        }
+//        if (mobile == '') {
+//            $('[name = mobile]').attr('placeholder','请输入您的手机号！');
+//            return false;
+//        }
+//        if (!/^1[3458][0-9]{9}$/.test(mobile)) {
+//            $('[name = mobile]').val('');
+//            $('[name = mobile]').attr('placeholder','请输入正确的手机号！');
+//            return false;
+//        }
+//        if (password == '') {
+//            $('[name = password]').attr('placeholder','请设置登录密码 6-20位数字或字母！');
+//            return false;
+//        }
+//        window.location.href = "";
+
+        $.tips({type:1,content:"您已成功开店，即将前往登录"});
+    })
+</script>
+</body>
+</html>

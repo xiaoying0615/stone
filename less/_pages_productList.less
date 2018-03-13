@@ -1,0 +1,134 @@
+//product list page
+.pdtList-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: @colorBg2;
+  .product_list {
+    padding-left:0.3rem;
+    background-color: #fff;
+    .product_item {
+      position: relative;
+      width: 100%;
+      padding: 0.4rem 0.3rem 0.4rem 0;
+      border-bottom:1px solid @colorBg2;
+      clear: both;
+      overflow: hidden;
+      .img{
+        position: relative;
+        width: 1.97rem;
+        height: 2.38rem;
+        float: left;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        img {
+          max-width: 100%;
+          max-height:100%;
+        }
+        .label{
+          position: absolute;
+          top: 0;
+          left: 0;
+          i{
+            position: absolute;
+            top: -0.30rem;
+            left: 0;
+            font-size: 0.68rem;
+            background:@colTo;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@colFrom), color-stop(100%,@colTo));
+            background: -webkit-linear-gradient(top, @colFrom 0%,@colTo 100%);
+            background: -o-linear-gradient(top, @colFrom 0%,@colTo 100%);
+            background: -ms-linear-gradient(top, @colFrom 0%,@colTo 100%);
+            background: linear-gradient(to bottom, @colFrom 0%,@colTo 100%);
+            -webkit-background-clip: text;         /* 规定背景的划分区域 */
+            -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+          }
+          p{
+            position: absolute;
+            top: 0rem;
+            left: 0;
+            z-index: 2;
+            width: 0.68rem;
+            font-size: 0.24rem;
+            line-height: 1.2;
+            color: @colFoont1;
+            text-align: center;
+            padding: 0.03rem 0.02rem;
+          }
+        }
+      }
+      .info{
+        width: 4.7rem;
+        float: right;
+        h4,p{
+          line-height: 1.1;
+        }
+        h4{
+          font-weight:normal;
+          font-size: 0.32rem;
+          color: #333333;
+          margin-bottom: 0.12rem;
+        }
+        p{
+          font-size: 0.24rem;
+          color: #666666;
+          margin-bottom: 0.15rem;
+          &.price{
+            font-size: 0.32rem;
+            color: #dfaf72;
+          }
+          span{
+            display: inline-block;
+            width: 1.95rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:nth-child(2){
+              margin-left: 0.1rem;
+              width: 2.6rem;
+            }
+          }
+          a{
+            display: inline-block;
+            width: 1.5rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.28rem;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 0.05rem;
+            border-radius: 0.25rem;
+            background-color: #efbc7c;
+            &.j-delete{
+              line-height: 0.48rem;
+              color: #efbc7c;
+              border:0.01rem solid #efbc7c;
+              background-color: #fff;
+              margin-left: 0.2rem;
+            }
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .enter{
+        float: right;
+        display: inline-block;
+        width: 1.2rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        font-size: 0.28rem;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 0.35rem;
+        border-radius: 0.25rem;
+        background-color: #efbc7c;
+      }
+    }
+  }
+}
