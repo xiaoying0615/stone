@@ -4,5 +4,80 @@
   height: auto;
   min-height: 100vh;
   background: @colorBg2;
-
+  .edit_list{
+    width: 100%;
+    height:auto;
+    background-color: #fff;
+    margin-bottom: 0.3rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .edit_item{
+      width: 100%;
+      height: 1rem;
+      line-height: 1rem;
+      padding-left: 0.3rem;
+      .info{
+        position: relative;
+        width: 7.2rem;
+        line-height: 0.98rem;
+        padding-top: 0.01rem;
+        border-bottom: 0.01rem solid #e8e8e8;
+        .iconfont:not(.icon-l-right){
+          width: 0.60rem;
+          font-size: 0.45rem;
+          color: #666;
+          line-height: 1;
+          padding-top: 0.05rem;
+        }
+        p{
+          display: inline-block;
+          width: 1.6rem;
+          font-size: 0.32rem;
+          color: #333;
+        }
+        span{
+          display: inline-block;
+          width: 4.15rem;
+          font-size: 0.28rem;
+          color: #666666;
+          text-align: right;
+        }
+        .logo{
+          position: absolute;
+          right: 0.65rem;
+          top: 0.2rem;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .icon-l-right{
+          position: absolute;
+          right: 0.12rem;
+          top: .3rem;
+          font-size: 0.4rem;
+          color: #999;
+          line-height:1;
+        }
+      }
+      &:last-child{
+        .info{
+          border-width: 0;
+        }
+      }
+    }
+  }
+  .j-loginOut{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    font-size: 0.32rem;
+    color: #333333;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
 }

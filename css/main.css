@@ -161,7 +161,14 @@ input::-webkit-input-placeholder{color:#999}
 .shareFriend-content .share_info #copyCardArea .flex p:last-child{text-align:left}
 .shareFriend-content .share_info #copyCardArea .code{display:inline-block;width:3.58rem;height:3.58rem;margin:.5rem auto .3rem}
 .shareFriend-content .share_info .b-share{display:inline-block;width:5.1rem;height:1.3rem;text-align:center;border-radius:.65rem;padding:.1rem;overflow:hidden;margin-top:.4rem;background:url("../imgs/btn_bg.png") no-repeat top center / cover}.shareFriend-content .share_info .b-share span{color:#fff;font-size:.24rem}.shareFriend-content .share_info .b-share span.lg{font-size:.36rem}
-.editInfo-content{width:100%;height:auto;min-height:100vh;background:#eee}
+.editInfo-content{width:100%;height:auto;min-height:100vh;background:#eee}.editInfo-content .edit_list{width:100%;height:auto;background-color:#fff;margin-bottom:.3rem}.editInfo-content .edit_list:last-child{margin-bottom:0}
+.editInfo-content .edit_list .edit_item{width:100%;height:1rem;line-height:1rem;padding-left:.3rem}.editInfo-content .edit_list .edit_item .info{position:relative;width:7.2rem;line-height:.98rem;padding-top:.01rem;border-bottom:.01rem solid #e8e8e8}.editInfo-content .edit_list .edit_item .info .iconfont:not(.icon-l-right){width:.6rem;font-size:.45rem;color:#666;line-height:1;padding-top:.05rem}
+.editInfo-content .edit_list .edit_item .info p{display:inline-block;width:1.6rem;font-size:.32rem;color:#333}
+.editInfo-content .edit_list .edit_item .info span{display:inline-block;width:4.15rem;font-size:.28rem;color:#666;text-align:right}
+.editInfo-content .edit_list .edit_item .info .logo{position:absolute;right:.65rem;top:.2rem;width:.6rem;height:.6rem;border-radius:50%}
+.editInfo-content .edit_list .edit_item .info .icon-l-right{position:absolute;right:.12rem;top:.3rem;font-size:.4rem;color:#999;line-height:1}
+.editInfo-content .edit_list .edit_item:last-child .info{border-width:0}
+.editInfo-content .j-loginOut{position:fixed;left:0;bottom:0;display:inline-block;width:100%;height:1rem;font-size:.32rem;color:#333;line-height:1rem;text-align:center;background-color:#fff}
 .uploadProduct-content{width:100%;height:auto;min-height:100vh;background:#eee}.uploadProduct-content .ttl{font-size:.32rem;color:#666;line-height:1;padding:.3rem .3rem 0 .3rem}
 .uploadProduct-content .infoList{padding-left:.3rem;background-color:#fff;margin-top:.3rem}.uploadProduct-content .infoList .uploadPic{padding:.35rem 0 .5rem;clear:both;overflow:hidden}.uploadProduct-content .infoList .uploadPic .info{float:left;width:1.65rem;font-size:.32rem;color:#333;line-height:1.2}.uploadProduct-content .infoList .uploadPic .info .num{font-size:.2rem;color:#999}
 .uploadProduct-content .infoList .uploadPic ul{float:right;width:5.5rem;list-style:none}.uploadProduct-content .infoList .uploadPic ul li{position:relative;float:left;width:1.1rem;height:1.1rem;margin-right:.25rem;text-align:center}.uploadProduct-content .infoList .uploadPic ul li img{display:inline-block;width:auto;height:auto;max-width:100%;max-height:100%}
@@ -186,3 +193,8 @@ input::-webkit-input-placeholder{color:#999}
 .editInfoDetail-content .infoList .inline .label{position:absolute;right:.3rem;font-size:.28rem;color:#999;text-align:right}
 .editInfoDetail-content .tip{font-size:.28rem;color:#999;padding:.3rem}.editInfoDetail-content .tip.num{color:#333}
 .editInfoDetail-content .j-ensure{position:fixed;bottom:0;left:0;display:inline-block;width:100%;height:1rem;font-size:.32rem;color:#fff;line-height:1rem;text-align:center;background-color:#efbc7c}
+.editMyProduct-content{width:100%;height:auto;min-height:100vh;background:#eee}.editMyProduct-content .ttl{font-size:.32rem;color:#666;line-height:1;padding:.3rem}
+.editMyProduct-content .edit_item{width:100%;height:1rem;line-height:1rem;padding-left:.3rem;background-color:#fff}.editMyProduct-content .edit_item .info{position:relative;width:7.2rem;line-height:.98rem;padding-top:.01rem;border-bottom:.01rem solid #e8e8e8}.editMyProduct-content .edit_item .info p{display:inline-block;width:5.6rem;font-size:.32rem;color:#333}
+.editMyProduct-content .edit_item .info .num{display:inline-block;position:absolute;right:.6rem;top:.32rem;width:auto;height:.36rem;line-height:.36rem;font-size:.24rem;color:#fff;padding:0 .1rem;text-align:center;background-color:#666;border-radius:.18rem}
+.editMyProduct-content .edit_item .info .icon-l-right{position:absolute;right:.12rem;top:.25rem;font-size:.4rem;color:#999;line-height:1}
+.editMyProduct-content .edit_item:last-child .info{border-width:0}
